@@ -2,6 +2,7 @@ import {
     createServer,
 } from 'http';
 
-createServer((req, res) => {
-    console.log('hello');
+createServer(() => {
+    /* eslint-disable no-console */
+  console.log('hello');
 });
