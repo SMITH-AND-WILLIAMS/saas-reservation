@@ -1,14 +1,14 @@
 {
-  "name": "node-es6-base",
+  "name": "Reservation",
   "version": "0.0.1",
   "description": "This project is the base for all other projects made in ode where we wish to use ES6 full syntax. It will be transpiled with babel",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "lint": "eslint src/**",
-    "build": "babel src -d dist",
-    "prepublish": "npm run build",
-    "start": "node lib/",
-    "dev": ". / node_modules / .bin / babel - node src / ",
+    "lint": "./node_modules/.bin/eslint src/** || exit 0",
+    "build": "./node_modules/.bin/babel src -d dist",
+    "prestart": "npm run build",
+    "start": "node dist/",
+    "dev": "./node_modules/.bin/nodemon --exec babel-node src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,6 +36,9 @@
     "babel-preset-es2015": "^6.22.0",
     "eslint": "^3.14.1",
     "eslint-config-airbnb": "^14.0.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "nodemon": "^1.11.0"
   }
 }
