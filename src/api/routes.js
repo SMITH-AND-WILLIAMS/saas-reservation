@@ -1,7 +1,4 @@
-import reservationCtrl from 'reservationsCtrl';
+// import reservationCtrl from './reservationsCtrl';
+const reservationCtrl = require('./reservationsCtrl');
 
-const endpoints = [
-  // { method: 'GET', path: 'api/resetvations',config:  }
-];
-
-export default endpoints;
+module.exports.endPoints = [{ method: 'GET', path: '/api/reservations', config: reservationCtrl.get }];

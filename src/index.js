@@ -1,12 +1,14 @@
-import { Server } from 'hapi';
-/* eslint-disable no-console */
-const server = new Server();
+const Hapi = require('hapi');
+const reservationRoutes = require('./api/routes');
+
+const server = new Hapi.Server();
 server.connection({
   host: 'localhost',
   port: 8000,
 });
 
-server.route();
+console.log(reservationRoutes.endPoints);
+server.route(reservationRoutes.endpoints);
 
 server.start((err) => {
   if (err) throw err;
