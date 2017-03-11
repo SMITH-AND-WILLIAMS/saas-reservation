@@ -30,14 +30,20 @@
   },
   "homepage": "https://github.com/SMITH-AND-WILLIAMS/node-ES6-base#readme",
   "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
     "eslint": "^3.14.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
+    "handlebars": "^4.0.6",
     "hapi": "^16.1.0",
     "hapi-auth-bearer-token": "^5.0.0",
+    "hapi-auth-cookie": "^6.1.1",
+    "inert": "^4.1.0",
     "nodemon": "^1.11.0",
-    "sqlite3": "^3.1.8"
+    "sqlite3": "^3.1.8",
+    "vision": "^4.1.1",
+    "wreck": "^10.0.0"
   }
 }
